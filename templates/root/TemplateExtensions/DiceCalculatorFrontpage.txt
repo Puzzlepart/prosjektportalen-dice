@@ -1,0 +1,21 @@
+{
+    "Files": [
+        {
+            "Folder": "SitePages",
+            "Src": "{sitecollection}/Resources/SitePage.txt",
+            "Url": "ProjectHome.aspx",
+            "Overwrite": true,
+            "RemoveExistingWebParts": false,
+            "WebParts": [
+                {
+                    "Title": "DiceCalculator",
+                    "Zone": "LeftColumn",
+                    "Order": 10,
+                    "Contents": {
+                        "FileSrc": "{wpgallery}/DiceCalculator.webpart"
+                    }
+                }
+            ]
+        }
+    ]
+}
