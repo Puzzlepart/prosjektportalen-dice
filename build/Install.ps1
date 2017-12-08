@@ -54,7 +54,7 @@ elseif ($Credential -eq $null -and -not $UseWebLogin.IsPresent -and -not $Curren
 }
 
 # Start installation
-function Start-Install() {
+function Start-Install() {  
     # Prints header
     if (-not $Upgrade.IsPresent) {
         Write-Host "############################################################################" -ForegroundColor Green
@@ -105,4 +105,15 @@ function Start-Install() {
     }
 }
 
-Start-Install
+Connect-SharePoint $Url -UseWeb  
+$MinPPVersion = ParseVersion -VersionString "2.1.21"
+$CurrentPPVersion = ParseVersion -VersionString (Get-PnPPropertyBag -Key pp_version)
+
+if ($CurrentPPVersion -ge $MinPPVersion) {
+    Start-Install
+}
+else {
+    Write-Host 
+    Write-Host "ERROR: DICE for Prosjekportalen requires Prosjektportalen 2.1.21 or newer installed." -ForegroundColor Red 
+    Write-Host 
+}

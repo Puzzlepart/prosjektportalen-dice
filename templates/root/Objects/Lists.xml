@@ -1,5 +1,5 @@
 <pnp:Lists 
-    xmlns:pnp="http://schemas.dev.office.com/PnP/2017/05/ProvisioningSchema">
+    xmlns:pnp="http://schemas.dev.office.com/PnP/2016/05/ProvisioningSchema">
     <pnp:ListInstance Title="Dice" Description="" TemplateType="100" Url="Lists/Dice" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" EnableFolderCreation="false">
         <pnp:Views RemoveExistingViews="true">
             <View DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All" Url="{site}/Lists/Dice/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=44">

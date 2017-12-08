@@ -2,32 +2,30 @@
 function Connect-SharePoint ($Url) {
     if ($UseWebLogin.IsPresent) {
         Connect-PnPOnline $Url -UseWebLogin
-    } elseif ($CurrentCredentials.IsPresent) {
+    }
+    elseif ($CurrentCredentials.IsPresent) {
         Connect-PnPOnline $Url -CurrentCredentials
-    } else {
+    }
+    else {
         Connect-PnPOnline $Url -Credentials $Credential
     }
 }
 
 # Apply tepmplate
-function Apply-Template([string]$Template, $Handlers = "All", $ExcludeHandlers, [HashTable]$Parameters = @{}) {    
-    if ($ExcludeHandlers.IsPresent) {
-        Apply-PnPProvisioningTemplate ".\templates\$($Template).pnp" -Parameters $Parameters -Handlers $Handlers -ExcludeHandlers $ExcludeHandlers
-    } else {
-        Apply-PnPProvisioningTemplate ".\templates\$($Template).pnp" -Parameters $Parameters -Handlers $Handlers
-    }
+function Apply-Template([string]$Template) {    
+    Apply-PnPProvisioningTemplate ".\templates\$($Template).pnp"
 }
 
 function ParseVersion($VersionString) {
-    if($VersionString  -like "*.*.*#*") {
+    if ($VersionString -like "*.*.*#*") {
         $vs = $VersionString.Split("#")[0]
         return [Version]($vs)
     }
-    if($VersionString  -like "*.*.*.*") {
+    if ($VersionString -like "*.*.*.*") {
         $vs = $VersionString.Split(".")[0..2] -join "."
         return [Version]($vs)
     }
-    if($VersionString  -like "*.*.*") {
+    if ($VersionString -like "*.*.*") {
         return [Version]($VersionString)
     }
 }
