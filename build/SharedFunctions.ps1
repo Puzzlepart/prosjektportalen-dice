@@ -10,16 +10,11 @@ function Connect-SharePoint ($Url) {
 }
 
 # Apply tepmplate
-function Apply-Template([string]$Template, [switch]$Localized, $Handlers = "All", $ExcludeHandlers, [HashTable]$Parameters = @{}) {    
-    $Language = Get-WebLanguage -ctx (Get-PnPContext)    
-    if ($Localized.IsPresent) {
-        $Template = "$($Template)-$($Language)"
-    }
-    $MergedParameters = (@{"AssetsSiteUrl" = $AssetsUrlParam; "DataSourceSiteUrl" = $DataSourceUrlParam;},$Parameters | Merge-Hashtables)
+function Apply-Template([string]$Template, $Handlers = "All", $ExcludeHandlers, [HashTable]$Parameters = @{}) {    
     if ($ExcludeHandlers.IsPresent) {
-        Apply-PnPProvisioningTemplate ".\templates\$($Template).pnp" -Parameters $MergedParameters -Handlers $Handlers -ExcludeHandlers $ExcludeHandlers
+        Apply-PnPProvisioningTemplate ".\templates\$($Template).pnp" -Parameters $Parameters -Handlers $Handlers -ExcludeHandlers $ExcludeHandlers
     } else {
-        Apply-PnPProvisioningTemplate ".\templates\$($Template).pnp" -Parameters $MergedParameters -Handlers $Handlers
+        Apply-PnPProvisioningTemplate ".\templates\$($Template).pnp" -Parameters $Parameters -Handlers $Handlers
     }
 }
 

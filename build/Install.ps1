@@ -88,7 +88,7 @@ function Start-Install() {
     try {
         Connect-SharePoint $Url -UseWeb
         Write-Host "Deploying required lists and files.. " -ForegroundColor Green -NoNewLine
-        Apply-Template -Template "root" -Localized
+        Apply-Template -Template "root"
         Write-Host "DONE" -ForegroundColor Green
         Disconnect-PnPOnline
     }
@@ -105,5 +105,4 @@ function Start-Install() {
     }
 }
 
-Ensure-AssociatedGroups
 Start-Install
