@@ -9,4 +9,11 @@
             <pnp:Property Key="GtOrder" Value="10" />
         </pnp:Properties>
     </pnp:File>
+    <pnp:File Src="WebPartGallery\DiceCalculator.webpart" Folder="_catalogs/wp" Overwrite="true">
+        <pnp:Properties>
+            <pnp:Property Key="Title" Value="DiceCalculator" />
+            <pnp:Property Key="WebPartDescription" Value="" />
+            <pnp:Property Key="Group" Value="Prosjektportalen - Dice" />
+        </pnp:Properties>
+    </pnp:File>
 </pnp:Files>
