@@ -1,5 +1,5 @@
 <pnp:Files 
-    xmlns:pnp="http://schemas.dev.office.com/PnP/2017/05/ProvisioningSchema">
+    xmlns:pnp="http://schemas.dev.office.com/PnP/2016/05/ProvisioningSchema">
     <pnp:File Src="TemplateExtensions\DiceCalculatorFrontpage.txt" Folder="Extensions" Overwrite="true">
         <pnp:Properties>
             <pnp:Property Key="Title" Value="Dice-kalkulator på forsiden" />
@@ -7,6 +7,13 @@
             <pnp:Property Key="GtIsEnabled" Value="true" />
             <pnp:Property Key="GtShowInNewForm" Value="true" />
             <pnp:Property Key="GtOrder" Value="10" />
+        </pnp:Properties>
+    </pnp:File>
+    <pnp:File Src="WebPartGallery\DiceCalculator.webpart" Folder="_catalogs/wp" Overwrite="true">
+        <pnp:Properties>
+            <pnp:Property Key="Title" Value="DiceCalculator" />
+            <pnp:Property Key="WebPartDescription" Value="" />
+            <pnp:Property Key="Group" Value="Prosjektportalen - Dice" />
         </pnp:Properties>
     </pnp:File>
 </pnp:Files>

@@ -1,0 +1,29 @@
+{
+  "name": "prosjektportalen-dice",
+  "version": "1.0.0",
+  "description": "DICE for Prosjektportalen",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Puzzlepart/prosjektportalen-dice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Puzzlepart/prosjektportalen-dice/issues"
+  },
+  "homepage": "https://github.com/Puzzlepart/prosjektportalen-dice#readme",
+  "devDependencies": {
+    "fs": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-color": "0.0.1",
+    "gulp-zip": "^4.0.0",
+    "path": "^0.12.7",
+    "run-sequence": "^2.2.0",
+    "string-format": "^0.5.0"
+  }
+}
