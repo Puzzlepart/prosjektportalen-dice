@@ -108,19 +108,43 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Views_All_DisplayName" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="Views_Scores_DisplayName" xml:space="preserve">
+    <value>Scores</value>
+  </data>
   <data name="SiteFields_DiceDuration_DisplayName" xml:space="preserve">
     <value>Duration (between learning milestones or till completion)</value>
+  </data>
+  <data name="SiteFields_DiceDurationScore_DisplayName" xml:space="preserve">
+    <value>Duration (between learning milestones or till completion) - Score</value>
   </data>
   <data name="SiteFields_DiceTPI_DisplayName" xml:space="preserve">
     <value>Team Performance Integrity</value>
   </data>
+  <data name="SiteFields_DiceTPIScore_DisplayName" xml:space="preserve">
+    <value>Team Performance Integrity - Score</value>
+  </data>
   <data name="SiteFields_DiceCommSeniorMgmt_DisplayName" xml:space="preserve">
     <value>Commitment (Senior Mgmt)</value>
+  </data>
+  <data name="SiteFields_DiceCommSeniorMgmtScore_DisplayName" xml:space="preserve">
+    <value>Commitment (Senior Mgmt) - Score</value>
   </data>
   <data name="SiteFields_DiceCommLocal_DisplayName" xml:space="preserve">
     <value>Commitment (Local)</value>
   </data>
+  <data name="SiteFields_DiceCommLocalScore_DisplayName" xml:space="preserve">
+    <value>Commitment (Local) - Score</value>
+  </data>
   <data name="SiteFields_DiceEffort_DisplayName" xml:space="preserve">
     <value>Effort</value>
+  </data>
+  <data name="SiteFields_DiceEffortScore_DisplayName" xml:space="preserve">
+    <value>Effort - Score</value>
+  </data>
+  <data name="SiteFields_DiceOverallScore_DisplayName" xml:space="preserve">
+    <value>Overall Score</value>
   </data>
 </root>

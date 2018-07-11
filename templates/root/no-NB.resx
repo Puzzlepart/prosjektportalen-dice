@@ -108,19 +108,43 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Views_All_DisplayName" xml:space="preserve">
+    <value>Alle</value>
+  </data>
+  <data name="Views_Scores_DisplayName" xml:space="preserve">
+    <value>Poengsum</value>
+  </data>
   <data name="SiteFields_DiceDuration_DisplayName" xml:space="preserve">
     <value>Varighet mellom beslutningspunkter</value>
+  </data>
+  <data name="SiteFields_DiceDurationScore_DisplayName" xml:space="preserve">
+    <value>Varighet mellom beslutningspunkter - Poengsum</value>
   </data>
   <data name="SiteFields_DiceTPI_DisplayName" xml:space="preserve">
     <value>Prosjektgruppens integritet og ytelse</value>
   </data>
+  <data name="SiteFields_DiceTPIScore_DisplayName" xml:space="preserve">
+    <value>Prosjektgruppens integritet og ytelse - Poengsum</value>
+  </data>
   <data name="SiteFields_DiceCommSeniorMgmt_DisplayName" xml:space="preserve">
     <value>Støtte fra prosjekteier</value>
+  </data>
+  <data name="SiteFields_DiceCommSeniorMgmtScore_DisplayName" xml:space="preserve">
+    <value>Støtte fra prosjekteier - Poengsum</value>
   </data>
   <data name="SiteFields_DiceCommLocal_DisplayName" xml:space="preserve">
     <value>Støtte fra gevinsteier</value>
   </data>
+  <data name="SiteFields_DiceCommLocalScore_DisplayName" xml:space="preserve">
+    <value>Støtte fra gevinsteier - Poengsum</value>
+  </data>
   <data name="SiteFields_DiceEffort_DisplayName" xml:space="preserve">
     <value>Behov for ekstrainnsats</value>
+  </data>
+  <data name="SiteFields_DiceEffortScore_DisplayName" xml:space="preserve">
+    <value>Behov for ekstrainnsats - Poengsum</value>
+  </data>
+  <data name="SiteFields_DiceOverallScore_DisplayName" xml:space="preserve">
+    <value></value>
   </data>
 </root>
