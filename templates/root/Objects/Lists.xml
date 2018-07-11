@@ -1,8 +1,7 @@
-<pnp:Lists 
-    xmlns:pnp="http://schemas.dev.office.com/PnP/2016/05/ProvisioningSchema">
+<pnp:Lists xmlns:pnp="http://schemas.dev.office.com/PnP/2016/05/ProvisioningSchema">
     <pnp:ListInstance Title="Dice" Description="" TemplateType="100" Url="Lists/Dice" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" EnableFolderCreation="false">
         <pnp:Views RemoveExistingViews="true">
-            <View DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All" Url="{site}/Lists/Dice/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=44">
+            <View DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="{resource:Views_All_DisplayName}" Url="{site}/Lists/Dice/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=44">
                 <Query>
                     <OrderBy>
                         <FieldRef Name="Created" />
@@ -22,7 +21,7 @@
                 <Aggregations Value="Off" />
                 <JSLink>clienttemplates.js</JSLink>
             </View>
-            <View MobileView="TRUE" Type="HTML" DisplayName="Scores" Url="{site}/Lists/Dice/Scores.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=44">
+            <View MobileView="TRUE" Type="HTML" DisplayName="{resource:Views_Scores_DisplayName}" Url="{site}/Lists/Dice/Scores.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=44">
                 <Query>
                     <OrderBy>
                         <FieldRef Name="Created" />
@@ -42,7 +41,7 @@
                 <Aggregations Value="Off" />
                 <JSLink>clienttemplates.js</JSLink>
             </View>
-            <View MobileView="TRUE" Type="HTML" DisplayName="Duration" Url="{site}/Lists/Dice/Duration.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=44">
+            <View MobileView="TRUE" Type="HTML" DisplayName="{resource:SiteFields_DiceDuration_DisplayName}" Url="{site}/Lists/Dice/Duration.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=44">
                 <Query>
                     <OrderBy>
                         <FieldRef Name="Created" />
@@ -58,7 +57,7 @@
                 <Aggregations Value="Off" />
                 <JSLink>clienttemplates.js</JSLink>
             </View>
-            <View MobileView="TRUE" Type="HTML" DisplayName="Team Performance Integrity" Url="{site}/Lists/Dice/TPI.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=44">
+            <View MobileView="TRUE" Type="HTML" DisplayName="{resource:SiteFields_DiceTPI_DisplayName}" Url="{site}/Lists/Dice/TPI.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=44">
                 <Query>
                     <OrderBy>
                         <FieldRef Name="Created" />
@@ -74,7 +73,7 @@
                 <Aggregations Value="Off" />
                 <JSLink>clienttemplates.js</JSLink>
             </View>
-            <View MobileView="TRUE" Type="HTML" DisplayName="Commitment (Senior Mgmt)" Url="{site}/Lists/Dice/CommSeniorMgmt.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=44">
+            <View MobileView="TRUE" Type="HTML" DisplayName="{resource:SiteFields_DiceCommSeniorMgmt_DisplayName}" Url="{site}/Lists/Dice/CommSeniorMgmt.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=44">
                 <Query>
                     <OrderBy>
                         <FieldRef Name="Created" />
@@ -90,7 +89,7 @@
                 <Aggregations Value="Off" />
                 <JSLink>clienttemplates.js</JSLink>
             </View>
-            <View MobileView="TRUE" Type="HTML" DisplayName="Commitment (Local)" Url="{site}/Lists/Dice/CommLocal.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=44">
+            <View MobileView="TRUE" Type="HTML" DisplayName="{resource:SiteFields_DiceCommLocal_DisplayName}" Url="{site}/Lists/Dice/CommLocal.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=44">
                 <Query>
                     <OrderBy>
                         <FieldRef Name="Created" />
@@ -106,7 +105,7 @@
                 <Aggregations Value="Off" />
                 <JSLink>clienttemplates.js</JSLink>
             </View>
-            <View MobileView="TRUE" Type="HTML" DisplayName="Effort" Url="{site}/Lists/Dice/Effort.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=44">
+            <View MobileView="TRUE" Type="HTML" DisplayName="{resource:SiteFields_DiceEffort_DisplayName}" Url="{site}/Lists/Dice/Effort.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=44">
                 <Query>
                     <OrderBy>
                         <FieldRef Name="Created" />
@@ -122,7 +121,7 @@
                 <Aggregations Value="Off" />
                 <JSLink>clienttemplates.js</JSLink>
             </View>
-            <View MobileView="TRUE" Type="HTML" DisplayName="Overall Score" Url="{site}/Lists/Dice/OverallScore.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=44">
+            <View MobileView="TRUE" Type="HTML" DisplayName="{resource:SiteFields_DiceOverallScore_DisplayName}" Url="{site}/Lists/Dice/OverallScore.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=44">
                 <Query>
                     <OrderBy>
                         <FieldRef Name="Created" />
@@ -139,17 +138,17 @@
             </View>
         </pnp:Views>
         <pnp:Fields>
-            <Field DisplayName="Duration (between learning milestones or till completion)" MaxLength="255" Type="Text" ID="{6f01c21b-de0e-44a0-ac84-2af4bf30d7ee}" SourceID="{{listid:Dice}}" StaticName="DiceDuration" Name="DiceDuration" />
-            <Field Decimals="1" DisplayName="Duration (between learning milestones or till completion) - Score" Type="Number" ID="{8bc97005-5ec9-4712-bde4-42f0b758f52e}" SourceID="{{listid:Dice}}" StaticName="DiceDurationScore" Name="DiceDurationScore" />
-            <Field DisplayName="Team Performance Integrity" Type="Text" ID="{28c23d7e-b2be-40c1-bec7-6ca3db24ba96}" SourceID="{{listid:Dice}}" StaticName="DiceTPI" Name="DiceTPI" />
-            <Field Decimals="1" DisplayName="Team Performance Integrity - Score" Type="Number" ID="{ccb9c004-927e-428d-8427-022084b16372}" SourceID="{{listid:Dice}}" StaticName="DiceTPIScore" Name="DiceTPIScore" />
-            <Field DisplayName="Commitment (Senior Mgmt)" MaxLength="255" Type="Text" ID="{8cc5fea4-89a9-4df5-a2d2-dda109fb7780}" SourceID="{{listid:Dice}}" StaticName="DiceCommSeniorMgmt" Name="DiceCommSeniorMgmt" />
-            <Field Decimals="1" DisplayName="Commitment (Senior Mgmt) - Score" Type="Number" ID="{d61bcca8-5c22-4888-8905-7aa63d11e566}" SourceID="{{listid:Dice}}" StaticName="DiceCommSeniorMgmtScore" Name="DiceCommSeniorMgmtScore" />
-            <Field DisplayName="Commitment (Local)" MaxLength="255" Type="Text" ID="{f976e7f2-7dc5-4a85-b53f-36ebf968f307}" SourceID="{{listid:Dice}}" StaticName="DiceCommLocal" Name="DiceCommLocal" />
-            <Field Decimals="1" DisplayName="Commitment (Local) - Score" Type="Number" ID="{1d0dff10-b19d-437c-9dcf-a8fdf59fcaf1}" SourceID="{{listid:Dice}}" StaticName="DiceCommLocalScore" Name="DiceCommLocalScore" />
-            <Field DisplayName="Effort" MaxLength="255" Type="Text" ID="{8feb0060-824b-4372-ae4b-7584519dde00}" SourceID="{{listid:Dice}}" StaticName="DiceEffort" Name="DiceEffort" />
-            <Field Decimals="1" DisplayName="Effort - Score" Type="Number" ID="{4d102d21-92a9-4571-a1fe-5d7e09a42394}" SourceID="{{listid:Dice}}" StaticName="DiceEffortScore" Name="DiceEffortScore" />
-            <Field Decimals="1" DisplayName="Overall Score" Type="Number" ID="{cbcf5505-ab9f-44c0-b594-27a39403f89e}" SourceID="{{listid:Dice}}" StaticName="DiceOverallScore" Name="DiceOverallScore" />
+            <Field DisplayName="{resource:SiteFields_DiceDuration_DisplayName}" MaxLength="255" Type="Text" ID="{6f01c21b-de0e-44a0-ac84-2af4bf30d7ee}" SourceID="{{listid:Dice}}" StaticName="DiceDuration" Name="DiceDuration" />
+            <Field DisplayName="{resource:SiteFields_DiceDurationScore_DisplayName}" Type="Number" Decimals="1" ID="{8bc97005-5ec9-4712-bde4-42f0b758f52e}" SourceID="{{listid:Dice}}" StaticName="DiceDurationScore" Name="DiceDurationScore" />
+            <Field DisplayName="{resource:SiteFields_DiceTPI_DisplayName}" Type="Text" ID="{28c23d7e-b2be-40c1-bec7-6ca3db24ba96}" SourceID="{{listid:Dice}}" StaticName="DiceTPI" Name="DiceTPI" />
+            <Field DisplayName="{resource:SiteFields_DiceTPIScore_DisplayName}" Type="Number" Decimals="1" ID="{ccb9c004-927e-428d-8427-022084b16372}" SourceID="{{listid:Dice}}" StaticName="DiceTPIScore" Name="DiceTPIScore" />
+            <Field DisplayName="{resource:SiteFields_DiceCommSeniorMgmt_DisplayName}" MaxLength="255" Type="Text" ID="{8cc5fea4-89a9-4df5-a2d2-dda109fb7780}" SourceID="{{listid:Dice}}" StaticName="DiceCommSeniorMgmt" Name="DiceCommSeniorMgmt" />
+            <Field DisplayName="{resource:SiteFields_DiceCommSeniorMgmtScore_DisplayName}" Type="Number" Decimals="1" ID="{d61bcca8-5c22-4888-8905-7aa63d11e566}" SourceID="{{listid:Dice}}" StaticName="DiceCommSeniorMgmtScore" Name="DiceCommSeniorMgmtScore" />
+            <Field DisplayName="{resource:SiteFields_DiceCommLocal_DisplayName}" MaxLength="255" Type="Text" ID="{f976e7f2-7dc5-4a85-b53f-36ebf968f307}" SourceID="{{listid:Dice}}" StaticName="DiceCommLocal" Name="DiceCommLocal" />
+            <Field DisplayName="{resource:SiteFields_DiceCommLocalScore_DisplayName}" Type="Number" Decimals="1" ID="{1d0dff10-b19d-437c-9dcf-a8fdf59fcaf1}" SourceID="{{listid:Dice}}" StaticName="DiceCommLocalScore" Name="DiceCommLocalScore" />
+            <Field DisplayName="{resource:SiteFields_DiceEffort_DisplayName}" MaxLength="255" Type="Text" ID="{8feb0060-824b-4372-ae4b-7584519dde00}" SourceID="{{listid:Dice}}" StaticName="DiceEffort" Name="DiceEffort" />
+            <Field DisplayName="{resource:SiteFields_DiceEffortScore_DisplayName}" Type="Number" Decimals="1" ID="{4d102d21-92a9-4571-a1fe-5d7e09a42394}" SourceID="{{listid:Dice}}" StaticName="DiceEffortScore" Name="DiceEffortScore" />
+            <Field DisplayName="{resource:SiteFields_DiceOverallScore_DisplayName}" Type="Number" Decimals="1" ID="{cbcf5505-ab9f-44c0-b594-27a39403f89e}" SourceID="{{listid:Dice}}" StaticName="DiceOverallScore" Name="DiceOverallScore" />
         </pnp:Fields>
     </pnp:ListInstance>
 </pnp:Lists>
